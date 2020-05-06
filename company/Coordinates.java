@@ -13,7 +13,7 @@ public class Coordinates {
     public void setX(float x) {
         if ( x > -554){
             this.x = x;
-        } else Constants.breakComment("Координата X <= -554");
+        } else System.out.println("Координата X <= -554");
     }
 
     public Integer getY() {

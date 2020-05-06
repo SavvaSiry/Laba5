@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) throws IOException, SAXException, ParserConfigurationException, TransformerException {
 
         try {
-            String nameOfFile = args[0];
+            String nameOfFile = "C:\\Users\\sss_user\\IdeaProjects\\Laba5\\src\\com\\company\\1.xml";
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             LinkedList<City> cityList = ParserXML.parseXML(nameOfFile);
 
@@ -108,7 +108,7 @@ public class Main {
                 }
             }
         } catch (java.lang.NullPointerException e) {
-            System.out.println("Путь к файлу указан неверно или нет прав");
+            System.out.println("Работа программы завершилась...");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             System.out.println("Забыли передать файл");
         }

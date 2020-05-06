@@ -32,8 +32,10 @@ public class Add {
         while (canGo){
             String x = reader.readLine();
             try {
-                coordinates.setX(Float.parseFloat(x));
-                canGo = false;
+                if (Float.parseFloat(x) > -554){
+                    coordinates.setX(Float.parseFloat(x));
+                    canGo = false;
+                } else System.out.print("Координата X <= -554, попробуйте ввести еще раз: ");
             } catch (NumberFormatException e) {
                 System.out.print("Вы ввели число неверно, попробуйте еще раз: ");
             }

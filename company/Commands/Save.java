@@ -84,6 +84,7 @@ public class Save {
             t.setOutputProperty(OutputKeys.INDENT, "yes");
             FileOutputStream outputStream = new FileOutputStream(nameOfFile);
             t.transform(new DOMSource(document), new StreamResult(outputStream));
+            System.out.println("Файл сохранен.");
         }  catch (FileNotFoundException e) {
             System.out.println("Нет доступа к файлу");
         }
